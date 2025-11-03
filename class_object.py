@@ -1,4 +1,10 @@
 # 클래스 기반의 객체를 만드는 이유, 생성자와 메서드의 형태에 대해 알아본다. 
+
+# 추상화
+# 현실 세계의 복잡한 문제를 해결하기 위해 중요한 특징을 추출하여 단순화하는 과정
+# 프로그램에서 필요한 요소만을 사용해서 객체를 표현하는 것
+# (포괄적인 사전적 의미로) 복잡한 자료, 모듈, 시스템 등으로부터 핵심적인 개념 또는 시능을 간추려 내는 것 
+
 class Parent:
     # Constructor to initialize book attributes
     def __init__(self, name, birth, job):
@@ -34,7 +40,12 @@ print(isinstance(parent, Child))
 print(isinstance(child, Parent))
 print(type(child) == Parent)
 
-# 노트북 작성 코드 백업 바람
+# 하나의 리스트로도 여러 종류의 데이터를 다룰 수 있다.
+
+# __메서드__() (Magic Method / Special Method)
+# 파이썬 인터프리터가 특정 상황에서 자동으로 호출함.
+# 객체의 동작을 커스터마이징하는 인터페이스
+# 파이썬의 문법 요소를 오버라이딩해 객체를 “언어처럼” 다룰 수 있게 함.
 
 # Dunder method를 활용한 (TypeError 등) 예외 처리
 # 타입이 다른 두 대상을 활용하는 기능을 구현할 때 메서드 내에 비교 대상을 한정하고 조건에 따라 구현한다.
